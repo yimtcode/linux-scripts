@@ -1,6 +1,13 @@
-#!/user/bin/env bash
-echo "*               soft    nofile            4096" >> /etc/security/limits.conf
-echo "*               hard    nofile            4096" >> /etc/security/limits.conf
-echo "*               soft    nproc             4096" >> /etc/security/limits.conf
-echo "*               soft    nproc             4096" >> /etc/security/limits.conf
-echo '配置完成,注意重新连接服务器使修改生效!'
+#!/usr/bin/env bash
+
+# config file position
+limits_file=/etc/security/limits.conf
+{
+  echo "*               soft    nofile            8196"
+  echo "*               hard    nofile            8196"
+  echo "*               soft    nproc             8196"
+  echo "*               soft    nproc             8196"
+} >>"$limits_file"
+
+echo 'Update finished!'
+echo 'Please reconnect server make the update effective!'
