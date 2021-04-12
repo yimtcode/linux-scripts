@@ -14,4 +14,4 @@ time=$(date +"%Y-%m-%d")
 # direction
 direction_name='you direction name'
 
-tar -zxvf "${direction_name}_${time}.tar.gz" $direction_name
+tar -czvf "${direction_name}_${time}.tar.gz" "./${direction_name}"
