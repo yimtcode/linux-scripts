@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
-# config file position
+# Note
+# 1.If the screen has started, exit and recreate
+
+# profile location
 limits_file=/etc/security/limits.conf
 {
-  echo "*               soft    nofile            8196"
-  echo "*               hard    nofile            8196"
-  echo "*               soft    nproc             8196"
-  echo "*               soft    nproc             8196"
+  echo "*               soft    nofile            65535"
+  echo "*               hard    nofile            65535"
+  echo "*               soft    nproc             65535"
+  echo "*               soft    nproc             65535"
 } >>"$limits_file"
 
 echo 'Update finished!'

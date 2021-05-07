@@ -1,6 +1,6 @@
 # Linux Scripts
 
-> linux工具脚本
+> Linux tool script
 
 - [ulimit config](./limits_config.sh)
 
