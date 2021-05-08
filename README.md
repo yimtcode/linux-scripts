@@ -13,5 +13,8 @@
 ## Soft
 
 - Nginx
-  - [ReadHat|CentOS](./nginx_install_redhat-cenos.sh)
+  - [ReadHat|CentOS](./nginx_install_redhat-centos.sh)
 
+    Refrence: http://nginx.org/en/linux_packages.html#RHEL-CentOS
+
+    
