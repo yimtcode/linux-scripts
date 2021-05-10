@@ -5,7 +5,7 @@ rm -rf /etc/yum.repos.d/nginx.repo
 
 touch /etc/yum.repos.d/nginx.repo
 
-echo "[nginx-stable]
+echo '[nginx-stable]
 name=nginx stable repo
 baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
 gpgcheck=1
@@ -19,6 +19,6 @@ baseurl=http://nginx.org/packages/mainline/centos/$releasever/$basearch/
 gpgcheck=1
 enabled=0
 gpgkey=https://nginx.org/keys/nginx_signing.key
-module_hotfixes=true" >> /etc/yum.repos.d/nginx.repo
+module_hotfixes=true' >> /etc/yum.repos.d/nginx.repo
 
 sudo yum install -y nginx
